@@ -35,6 +35,10 @@ namespace String {
   	~String() {
   		delete[] m_str;
   	}
+
+    char* data() {
+      return m_str;
+    }
   
   	char* c_str() {
   		return m_str;
